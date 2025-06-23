@@ -3,43 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Konum Seçin</title>
+    <title>Maria & Ethan - Harita</title>
     <style>
       body {
-        font-family: Arial, sans-serif;
+        font-family: "Georgia", serif;
+        background: #fff;
+        color: #222;
         text-align: center;
-        margin: 40px;
+        margin: 0;
+        padding: 0;
       }
-      .button {
-        display: block;
-        width: 80%;
-        max-width: 300px;
-        margin: 20px auto;
-        padding: 15px;
-        background-color: #007aff;
+      .banner {
+        background: url("https://images.unsplash.com/photo-1522098543979-ffc7f79d1205?fit=crop&w=1350&q=80")
+          no-repeat center/cover;
         color: white;
-        text-decoration: none;
-        border-radius: 10px;
-        font-size: 18px;
+        padding: 60px 20px;
       }
-      .apple {
+      h1 {
+        font-family: "Brush Script MT", cursive;
+        font-size: 3em;
+        margin-bottom: 10px;
+      }
+      .subtitle {
+        font-size: 1.2em;
+      }
+      .section {
+        padding: 40px 20px;
+      }
+      .btn {
+        display: inline-block;
+        margin: 15px;
+        padding: 15px 25px;
+        font-size: 1.1em;
+        border-radius: 8px;
+        text-decoration: none;
+        color: white;
+        background-color: #7b4c94;
+        transition: background-color 0.3s;
+      }
+      .btn.apple {
         background-color: #000;
+      }
+      .btn:hover {
+        background-color: #9c69c1;
+      }
+      .footer {
+        font-size: 0.9em;
+        color: #777;
+        margin-top: 40px;
       }
     </style>
   </head>
   <body>
-    <h2>Harita Uygulamanızı Seçin</h2>
-    <a
-      class="button"
-      href="https://maps.app.goo.gl/1Eo8qzmfQeRzh39b8"
-      target="_blank"
-      >Google Haritalar</a
-    >
-    <a
-      class="button apple"
-      href="https://maps.apple/p/FjP4DAm2mS6nCB"
-      target="_blank"
-      >Apple Haritalar</a
-    >
+    <div class="banner">
+      <h1>Maria & Ethan</h1>
+      <p class="subtitle">Düğün Lokasyonu</p>
+    </div>
+
+    <div class="section">
+      <h2>Harita Uygulamanızı Seçin</h2>
+      <a
+        class="btn"
+        href="https://maps.app.goo.gl/1Eo8qzmfQeRzh39b8"
+        target="_blank"
+        >Google Haritalar</a
+      >
+      <a
+        class="btn apple"
+        href="https://maps.apple/p/FjP4DAm2mS6nCB"
+        target="_blank"
+        >Apple Haritalar</a
+      >
+    </div>
+
+    <div class="footer">© 2025 Maria & Ethan — Tüm hakları saklıdır.</div>
   </body>
 </html>
